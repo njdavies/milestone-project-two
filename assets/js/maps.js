@@ -2,6 +2,9 @@
 var earthMap; 
 var destination;
 var map; 
+var markers = [];
+var service;
+var icon;
 
 // Initialise map of Earth upon site loading    
 function initMap() {
@@ -71,5 +74,45 @@ function getLatLng(city) {
                 disableDefaultUI: false 
             });
         }  
+    }
+}
+
+// Search for nearby attractions based on radio button selected by the user
+function selectAttraction(attraction, attractionIcon) {
+
+    // Remove any existing markers on map before continuing
+    if (markers.length > 0) {
+        for (var i=0; i<markers.length; i++) {
+            if (markers[i] != null) {
+                markers[i].setMap(null);
+            }
+        }
+    }
+    markers = [];        
+    
+    icon = attractionIcon;
+    
+    var request = {
+        location: destination,
+        radius: '10000',        
+        type: attraction
+    };
+
+    // Check if a destination city has been selected, and if not display a message to user
+    if (request.location == undefined) {
+        alert("Please select a destination city");
+    } else {
+    // Google Maps nearby search using Places library
+    service = new google.maps.places.PlacesService(map);
+    service.nearbySearch(request, callback);
+    }  
+
+    function callback(results, status) {
+
+        if (status == google.maps.places.PlacesServiceStatus.OK) {
+            for (var i = 0; i < results.length; i++) {                                                         
+                 createMarker(results[i]);                
+            }   
+        }   
     }
 }
