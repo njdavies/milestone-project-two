@@ -12,3 +12,9 @@ body {
     min-height:105px;    
     border: 1px solid #0285A8;
 }
+
+/*------------------------------------------Map Section*/
+
+#map {
+    height: 100%;    
+}
