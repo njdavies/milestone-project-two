@@ -59,3 +59,210 @@ body {
 #map {
     height: 100%;    
 }
+
+.infoWindow {
+    font-family: 'Encode Sans Semi Condensed', sans-serif;
+    font-weight: 500;  
+    color: #02547D; 
+}
+
+/*------------------------------------------Media Queries*/
+
+@media (min-width: 320px) and (max-width: 359px) {
+
+    .col-8 {
+        padding-bottom: 10px;
+        padding-right: 5px;
+    }
+
+    .btn {
+        font-size: 13px;
+    }
+
+    .form-check-inline {
+        padding-left: 10px;
+    }
+    
+    .hotel-margin {
+        margin-right: 17px;
+    }
+
+    .park-margin {
+        margin-right: 22px;
+    }
+
+    .museum-margin {
+        margin-right: 0px;
+    }
+
+    #map {
+        height: 375px;
+    }
+}
+
+@media (min-width: 360px)  {
+
+    .col-8 {
+        padding-bottom: 9px;
+        padding-top: 5px; 
+        padding-right: 0px;       
+    }
+
+    .hotel-margin {
+        margin-right: 4px;
+    }
+
+    .restuarant-margin {
+        margin-right: 7px;
+    }
+    
+    .bar-margin {
+        margin-right: 15px;
+    }
+
+    .museum-margin {
+        margin-right: 25px;
+    }
+    
+    #map {
+        height: 465px;
+    }
+}
+
+@media (min-width: 375px) {    
+
+    .col-8 {
+        padding-bottom: 15px;
+        padding-top: 11px; 
+        padding-right: 0px;       
+    }
+
+    #map {
+        height: 475px;
+    }
+}
+
+@media (min-width: 411px)  {
+
+    .col-8 {
+        padding-bottom: 15px;
+        padding-top: 11px; 
+        padding-right: 0px;       
+    }
+
+    .btn {
+        margin-left: 10px;
+    }
+
+    .hotel-margin {
+        margin-right: 11px;
+    }
+
+    .restuarant-margin {
+        margin-right: 11px;
+    }
+    
+    .bar-margin {
+        margin-right: 22px;
+    }
+
+    .museum-margin {
+        margin-right: 29px;
+    }
+
+    #map {
+        height: 545px;
+    }
+}
+
+@media (min-width: 768px) {
+    
+    .banner {
+        min-height: 195px;
+    }
+
+    .btn {
+        font-size: 20px;
+        margin-left: 50px;
+    }
+
+    .form-check-inline {        
+        padding: 15px;  
+        margin-left: 20px;
+        font-size: 20px;
+    }
+
+    .hotel-margin {
+        margin-right: 6px;
+    }
+
+    .park-margin {
+        margin-left: -10px;
+    }
+
+    .bar-margin {
+        margin-right: 26px;
+    }
+
+    .museum-margin {
+        margin-right: 32px;
+    }
+    
+    #map {
+        height: 700px;        
+    }    
+}   
+
+@media (min-width: 1024px) {
+
+    .banner {
+        min-height: 250px;
+    }
+
+    .col-4 {
+        padding-left: 25px;       
+    }
+
+    .btn {
+        font-size: 25px;
+        margin-left: 83px;
+    }
+
+    .dropdown-menu {
+        min-width: 10rem;
+    }
+
+    .form-check-inline {
+        padding: 20px;
+        margin-left: 35px; 
+        font-size: 20px; 
+    }
+    
+    #map {
+        height: 920px;        
+    }
+}
+
+@media (min-width: 1200px) {
+
+    .banner {
+        min-height: 185px;
+    }
+
+    .form-check-inline {
+        margin-left: 60px; 
+        font-size: 30px; 
+    }
+
+    .hotel-margin {
+        margin-right: -4px;
+    }
+
+    .park-margin {
+        margin-left: -23px;
+    }
+
+    #map {
+        height: 600px;
+    }
+}
