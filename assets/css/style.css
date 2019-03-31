@@ -1,0 +1,14 @@
+/*------------------------------------------Colors*/
+
+body {
+    background-color: #A9E8DC;
+}
+
+/*------------------------------------------Site Banner*/
+
+.banner {
+    background: url("../images/airplane.jpg") no-repeat center;
+    background-size: cover;    
+    min-height:105px;    
+    border: 1px solid #0285A8;
+}
