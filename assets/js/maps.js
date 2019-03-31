@@ -5,6 +5,7 @@ var map;
 var markers = [];
 var service;
 var icon;
+var infowindow;
 
 // Initialise map of Earth upon site loading    
 function initMap() {
@@ -115,4 +116,31 @@ function selectAttraction(attraction, attractionIcon) {
             }   
         }   
     }
+}
+
+// Place markers on map in respect of selected attraction
+function createMarker(place) {  
+
+    // Custom icons are pulled from an external site
+    var iconBase = 'https://maps.google.com/mapfiles/kml/shapes/';   
+ 
+    var marker = new google.maps.Marker({
+        map: map,
+        animation: google.maps.Animation.DROP,
+        position: place.geometry.location,
+        icon: iconBase + icon + '.png',                   
+    });
+    markers.push(marker);
+
+    infowindow = new google.maps.InfoWindow();
+    
+    // If a marker is clicked populate infowindow with data pulled from nearby search results
+    google.maps.event.addListener(marker, 'click', function () {
+        infowindow.setContent('<div class=infoWindow>' + 
+            '<strong>' + place.name + '</strong>' + '<br>' + 
+            'Address: ' + place.vicinity + '<br>' +    
+            'User Rating: ' + place.rating + '/5' + '<br>' +
+            '</div>');
+        infowindow.open(map, this);
+    });
 }
