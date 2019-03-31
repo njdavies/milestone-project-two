@@ -35,6 +35,25 @@ body {
     border-color: #0285A8;
 }
 
+/*------------------------------------------Select attraction Radio Buttons*/
+
+.form-check-inline {
+    font-family: 'Encode Sans Semi Condensed', sans-serif;
+    font-weight: 800;    
+    color: #02547D;    
+    /* Responsive font-size and line-height for mobile devices */
+    font-size: calc(11px + (20 - 14) * ((100vw - 300px) / (1200 - 300)));
+    line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 300px)/(1200 - 300)));
+    padding-right: 5px;
+    margin: 0px;
+}
+
+/* Align radio buttons to labels */
+.form-check-input {
+    margin-top: -1px;
+    vertical-align: middle;
+}
+
 /*------------------------------------------Map Section*/
 
 #map {
