@@ -13,6 +13,28 @@ body {
     border: 1px solid #0285A8;
 }
 
+/*------------------------------------------Where To Dropdown box and buttons*/
+
+.btn {
+    color: #fff;
+    background-color: #0285A8;
+    border-color: #0285A8;
+    font-family: 'Encode Sans Semi Condensed', sans-serif;
+    font-weight: 600;        
+    margin-top: 2px;
+    margin-left: 5px;
+}
+
+.dropdown-menu {
+    min-width: 3rem;
+}
+
+.dropdown-item {
+    font-family: 'Encode Sans Semi Condensed', sans-serif;
+    color: #02547D;    
+    border-color: #0285A8;
+}
+
 /*------------------------------------------Map Section*/
 
 #map {

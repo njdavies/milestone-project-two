@@ -20,6 +20,30 @@
         </div>
     </header> 
 
+    <!-- Select City/Attraction section -->
+    <section>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-4">
+                    <div class="dropdown">
+                        <button class="btn btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Where to?
+                        </button>
+                            <!-- Buttons call the getLatLng function when clicked -->
+                            <div class="dropdown-menu">
+                                <button class="dropdown-item" type="button" onclick="getLatLng('london')">London</button>
+                                <button class="dropdown-item" type="button" onclick="getLatLng('paris')">Paris</button>
+                                <button class="dropdown-item" type="button" onclick="getLatLng('ny')">New York</button>
+                                <button class="dropdown-item" type="button" onclick="getLatLng('sydney')">Sydney</button>
+                                <button class="dropdown-item" type="button" onclick="getLatLng('venice')">Venice</button>
+                                <button class="dropdown-item" type="button" onclick="getLatLng('prague')">Prague</button>
+                            </div>                    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Google map section -->
     <section class="container">
         <div id="map"></div>        
