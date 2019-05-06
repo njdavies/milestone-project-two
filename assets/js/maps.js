@@ -50,7 +50,7 @@ function getLatLng(city) {
             destination = prague;
             cityMap(prague);
             break;
-        default:
+        default:            
             break;
     }
         // Re-initialise map to centre over the selected desination city    
@@ -58,8 +58,9 @@ function getLatLng(city) {
 
             // Reset radio buttons so that none are selected
             var ele = document.getElementsByName("optradio");
-            for(var i=0;i<ele.length;i++)
-            ele[i].checked = false;
+            for (var i=0; i<ele.length; i++) {
+                ele[i].checked = false;
+            }           
 
             // Remove map controls from display for smaller viewport sizes
             if (window.matchMedia("(max-width: 767px)").matches) {

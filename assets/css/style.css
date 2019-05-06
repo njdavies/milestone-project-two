@@ -209,7 +209,7 @@ body {
     }
     
     #map {
-        height: 700px;        
+        height: 675px;        
     }    
 }   
 
@@ -239,7 +239,7 @@ body {
     }
     
     #map {
-        height: 920px;        
+        height: 935px;        
     }
 }
 
@@ -263,6 +263,6 @@ body {
     }
 
     #map {
-        height: 600px;
+        height: 1200px;
     }
 }
